@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Rayon;
 use Illuminate\Database\Seeder;
 
 class RayonSeeder extends Seeder
@@ -13,6 +14,10 @@ class RayonSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Rayon::create([
+            'name' => 'hehe',
+            'mentor' => 'hehe',
+            'slug' => 'hehe',
+        ]);
     }
 }

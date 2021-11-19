@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Rombel;
 use Illuminate\Database\Seeder;
 
 class RombelSeeder extends Seeder
@@ -13,6 +14,9 @@ class RombelSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Rombel::create([
+            'name' => 'hehe',
+            'slug' => 'hehe',
+        ]);
     }
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Absent;
 use App\Http\Requests\StoreAbsentRequest;
 use App\Http\Requests\UpdateAbsentRequest;
+use GuzzleHttp\Psr7\Request;
 
 class AbsentController extends Controller
 {
@@ -82,5 +83,10 @@ class AbsentController extends Controller
     public function destroy(Absent $absent)
     {
         //
+    }
+
+    public function presence()
+    {
+        
     }
 }
